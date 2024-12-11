@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/ooximkool/Wallpapers/cabin-2.jpg"
+let background = "#111618"
+let foreground = "#c3c4c5"
+let cursor     = "#c3c4c5"
+
+" Colors
+let color0  = "#111618"
+let color1  = "#AD877B"
+let color2  = "#9E7F80"
+let color3  = "#7C9682"
+let color4  = "#95A48D"
+let color5  = "#AFAE95"
+let color6  = "#B8BAA4"
+let color7  = "#c3c4c5"
+let color8  = "#5b6b70"
+let color9  = "#AD877B"
+let color10 = "#9E7F80"
+let color11 = "#7C9682"
+let color12 = "#95A48D"
+let color13 = "#AFAE95"
+let color14 = "#B8BAA4"
+let color15 = "#c3c4c5"

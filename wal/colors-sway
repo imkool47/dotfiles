@@ -1,0 +1,21 @@
+set $wallpaper /home/ooximkool/Wallpapers/cabin-2.jpg
+
+set $background #111618
+set $foreground #c3c4c5
+
+set $color0 #111618
+set $color1 #AD877B
+set $color2 #9E7F80
+set $color3 #7C9682
+set $color4 #95A48D
+set $color5 #AFAE95
+set $color6 #B8BAA4
+set $color7 #c3c4c5
+set $color8 #5b6b70
+set $color9 #AD877B
+set $color10 #9E7F80
+set $color11 #7C9682
+set $color12 #95A48D
+set $color13 #AFAE95
+set $color14 #B8BAA4
+set $color15 #c3c4c5
