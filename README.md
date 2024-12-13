@@ -21,7 +21,7 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 ## Screenshots
 
 ### Desktop Setup
-![Desktop Screenshot](./assets/desktop.png)
+![Desktop Screenshot](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2024-12-12-175854_hyprshot.png)
 
 ### Waybar and Hyprland
 ![Waybar](./assets/waybar.png)
@@ -85,8 +85,6 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 
 ## Contributing
 Feel free to submit pull requests or open issues if you have suggestions to improve these dotfiles.
-
----
 
 ---
 
