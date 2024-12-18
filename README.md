@@ -48,9 +48,11 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 3. **Install Dependencies**:
    Install the necessary packages for your setup:
    ```bash
-   sudo pacman -S hyprland waybar kitty neovim rofi wlogout swaync pywal pywalfox waypaper wofi rofi
+   sudo pacman -S kitty neovim
    ```
-
+   ```bash
+   yay -S cava brightnessctl fish hyprland hyprlock hyprpaper hyprpicker hyprshot hyprshade waybar rofi wlogout swaync pywal pywalfox waypaper wofi rofi starship yazi swww pipes.sh cbonsai cliphist
+   ```
 5. **Link the Configurations**:
    Symlink the configurations to your home directory:
    ```bash
