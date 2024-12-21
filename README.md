@@ -21,13 +21,15 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 ## Screenshots
 
 ### Desktop Setup
+
+### Kitty (Fish, Starship and Pokeget Setup)
 ![Desktop Screenshot](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2024-12-12-175854_hyprshot.png)
 
-### Waybar and Hyprland
-![Waybar](./assets/waybar.png)
+### Btop
+![btop](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2024-12-12-184352_hyprshot.png)
 
 ### Neovim with Plugins
-![Neovim](./assets/nvim.png)
+![Neovim](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2024-12-12-180108_hyprshot.png)
 
 ---
 
