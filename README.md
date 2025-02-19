@@ -55,7 +55,24 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
    ```bash
    yay -S cava brightnessctl fish hyprland hyprlock hyprpaper hyprpicker hyprshot hyprshade waybar rofi wlogout swaync pywal pywalfox waypaper wofi rofi starship yazi swww pipes.sh cbonsai cliphist
    ```
-5. **Link the Configurations**:
+
+4. **Fixing Audio Related Issues**:  
+   Step 1 - Remove PulseAudio  
+   ```bash
+   sudo pacman -Rns pulseaudio
+   ```
+   Step 2 - Install PipeWire and Related Packages
+   ```bash
+   sudo pacman -S pipewire wireplumber pipewire-pulse pipewire-alsa
+   ```
+   Step 3 - Restart Your System
+   
+   Step 4 - Verify PipeWire is Running after restating
+   ```bash
+   systemctl --user status pipewire
+   ```
+   
+6. **Link the Configurations**:
    Symlink the configurations to your home directory:
    ```bash
    ln -s ~/dotfiles/* ~/.config/
