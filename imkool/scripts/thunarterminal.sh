@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
-if [ -f ~/.config/ml4w/settings/terminal.sh ]; then
-    terminal="$(cat ~/.config/ml4w/settings/terminal.sh)"
+if [ -f ~/.config/imkool/settings/terminal.sh ]; then
+    terminal="$(cat ~/.config/imkool/settings/terminal.sh)"
     echo ":: Installing $terminal"
     if [ -d ~/.config/xfce4 ]; then
         if [ ! -f ~/.config/xfce4/helpers.rc ]; then
@@ -14,6 +14,6 @@ if [ -f ~/.config/ml4w/settings/terminal.sh ]; then
         echo "Then start this script again."
     fi
 else
-    echo "ERROR: ~/.config/ml4w/settings/terminal.sh not found"
+    echo "ERROR: ~/.config/imkool/settings/terminal.sh not found"
 fi
 sleep 3

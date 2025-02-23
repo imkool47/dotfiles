@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Compare installed version with running dotfiles
-if [ -f ~/.config/ml4w/version/compare.sh ] ;then
-    $HOME/.config/ml4w/version/compare.sh
+if [ -f ~/.config/imkool/version/compare.sh ] ;then
+    $HOME/.config/imkool/version/compare.sh
 fi
 
 # Start ML4W Welcome App

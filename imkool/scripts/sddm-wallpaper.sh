@@ -10,7 +10,7 @@
 # ----------------------------------------------------- 
 sleep 1
 clear
-cache_file="$HOME/.config/ml4w/cache/current_wallpaper"
+cache_file="$HOME/.config/imkool/cache/current_wallpaper"
 current_wallpaper=$(cat "$cache_file")
 extension="${current_wallpaper##*.}"
 
@@ -21,9 +21,9 @@ echo -e "${NONE}"
 sddm_theme_name="sequoia"
 sddm_asset_folder="/usr/share/sddm/themes/$sddm_theme_name/backgrounds"
 
-sddm_theme_tpl="/usr/share/ml4w-hyprland/sddm/theme.conf"
-if [ -f $HOME/.config/ml4w/settings/sddm/theme.conf ]; then
-    sddm_theme_tpl="$HOME/.config/ml4w/settings/sddm/theme.conf"
+sddm_theme_tpl="/usr/share/imkool-hyprland/sddm/theme.conf"
+if [ -f $HOME/.config/imkool/settings/sddm/theme.conf ]; then
+    sddm_theme_tpl="$HOME/.config/imkool/settings/sddm/theme.conf"
     echo ":: Using custum theme.conf"
 fi
 
@@ -41,7 +41,7 @@ if [ ! -d /etc/sddm.conf.d/ ]; then
     echo ":: Folder /etc/sddm.conf.d created."
 fi
 
-sudo cp /usr/share/ml4w-hyprland/sddm/sddm.conf /etc/sddm.conf.d/
+sudo cp /usr/share/imkool-hyprland/sddm/sddm.conf /etc/sddm.conf.d/
 echo ":: File /etc/sddm.conf.d/sddm.conf updated."
 
 sudo cp $current_wallpaper $sddm_asset_folder/current_wallpaper.$extension
