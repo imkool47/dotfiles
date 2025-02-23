@@ -23,13 +23,22 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 ### Desktop Setup
 
 ### Kitty (Fish, Starship and Pokeget Setup)
-![Desktop Screenshot](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2024-12-12-175854_hyprshot.png)
+![Desktop Screenshot](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/Kitty.png)
 
 ### Btop
-![btop](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2024-12-12-184352_hyprshot.png)
+![btop](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/btop.png)
 
 ### Neovim with Plugins
-![Neovim](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2024-12-12-180108_hyprshot.png)
+![Neovim](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/neovim.png)
+
+### Rofi
+![Neovim](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/rofi.png)
+
+### Spotify with Cava
+![Spotify_Cava](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/spotify-cava.png)
+
+### Waybar
+![Waybar](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/waybar-with-cava.png)
 
 ---
 
