@@ -312,3 +312,8 @@ border-radius: 5px;
 min-width: 10px;
 border-radius: 5px;
 }
+
+#taskbar-separator {
+    font-size: 14px;
+    color: #cccccc;
+}

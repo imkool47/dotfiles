@@ -142,19 +142,19 @@
     "persistent-workspaces": {}
 },
 
-"wlr/taskbar": {
-    "format": "{icon}",
-    "rotate": 0,
-    "icon-size": 18,
-    "icon-theme": "Tela-circle-dracula",
-    "spacing": 0,
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-middle": "close",
-    "app_ids-mapping": {
-        "firefoxdeveloperedition": "firefox-developer-edition"
-    },
-},
+// "wlr/taskbar": {
+//     "format": "{icon}",
+//     "rotate": 0,
+//     "icon-size": 18,
+//     "icon-theme": "Tela-circle-dracula",
+//     "spacing": 0,
+//     "tooltip-format": "{title}",
+//     "on-click": "activate",
+//     "on-click-middle": "close",
+//     "app_ids-mapping": {
+//         "firefoxdeveloperedition": "firefox-developer-edition"
+//     },
+// },
 
 // GROUP
   
@@ -467,8 +467,10 @@
 },
       
 "wlr/taskbar": {
-    "format": "{icon} {name} ",
+    "format": "{icon}",
+     // "format": "{icon} {name} ",
     "icon-size": 15,
+    "icon-theme": "Tela-circle-dracula",
     "all-outputs": false,
     "tooltip-format": "{title}",
     "on-click": "activate",
@@ -529,7 +531,8 @@
 
 "custom/swaync": {
     "tooltip":true,
-    "format": "{icon} {}",
+    "format": "{icon}",
+    // "format": "{icon} {}",
     "format-icons": {
       "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",

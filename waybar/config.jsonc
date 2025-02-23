@@ -18,7 +18,7 @@
 		"hyprland/window",
 	],
 
-	// "custom/separator#blank",
+	// "custom/separator#taskbar-separator",
 	// "wlr/taskbar",
 
 	"modules-center": [
@@ -73,9 +73,14 @@
 	// 	"format-ethernet": " {interface}",
 	// 	"tooltip": false
 	// },
+
+	// "custom/separator#taskbar-separator": {
+	// 	"format": " ",
+	// 	"tooltip": false
+	// },
+
 	"custom/separator#taskbar-separator": {
-		"format": " ",
+		"format": " │ ",
 		"tooltip": false
 	},
-
 }
