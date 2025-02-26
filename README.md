@@ -14,7 +14,7 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 - **Neovim**: Plugin-rich configuration using `lazy.nvim`.
 - **Fastfetch**: Display system info with a beautiful logo.
 - **Rofi/Wofi**: Application launchers with custom themes.
-- **SDDM**: A visually appealing login manager.
+- **S:qDDM**: A visually appealing login manager.
 
 ---
 
