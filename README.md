@@ -8,13 +8,13 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 ![Header](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/DittoDotsHeader.jpg)
 
 ## ⚡ Features
-✅ Hyprland Setup - Minimal, beautiful, and highly customizable
-✅ GTK & Qt Theming - Consistent look across applications
-✅ Waybar, Rofi, Wofi - Custom launchers and status bars
-✅ Neovim & Micro - Optimized terminal editors
-✅ Fish Shell & Starship - Modern shell experience
-✅ Tmux, Ranger, Yazi - Productivity-focused tools
-✅ Automated Install Script - Restore setup quickly
+- ✅ Hyprland Setup - Minimal, beautiful, and highly customizable
+- ✅ GTK & Qt Theming - Consistent look across applications
+- ✅ Waybar, Rofi, Wofi - Custom launchers and status bars
+- ✅ Neovim & Micro - Optimized terminal editors
+- ✅ Fish Shell & Starship - Modern shell experience
+- ✅ Tmux, Ranger, Yazi - Productivity-focused tools
+- ✅ Automated Install Script - Restore setup quickly
 
 ---
 
@@ -79,47 +79,47 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 ```plaintext
 
 dotfiles/
-├── backgrounds/        # Wallpapers and backgrounds
-├── btop/               # Btop system monitor config
-├── cava/               # Cava audio visualizer config
-├── fastfetch/          # System fetch tool config
-├── fish/               # Fish shell configuration
-├── fonts/              # Custom fonts
-├── gtk-2.0/            # GTK2 theme settings
-├── gtk-3.0/            # GTK3 theme settings
-├── gtk-4.0/            # GTK4 theme settings
-├── htop/               # Htop process viewer config
-├── hypr/               # Hyprland window manager config
-├── imkool/             # Personal scripts/configs
-├── kitty/              # Kitty terminal config
-├── Kvantum/            # Kvantum theme engine settings
-├── lsd/                # LSD (better ls) config
-├── micro/              # Micro terminal text editor config
-├── nvim/               # Neovim configuration
-├── nwg-look/           # GTK theming tool config
-├── qt5ct/              # Qt5 theme settings
-├── qt6ct/              # Qt6 theme settings
-├── ranger/             # Ranger file manager config
-├── rofi/               # Rofi app launcher config
-├── rofi.ooximkool/     # Custom Rofi theme
-├── Screenshots/        # Screenshots of my setup
-├── sddm/               # SDDM login manager theme
-├── swaync/             # SwayNC notification manager
-├── tmux/               # Tmux terminal multiplexer config
-├── wal/                # Pywal colorscheme config
-├── waybar/             # Waybar status bar config
-├── waypaper/           # Wallpaper manager
-├── wlogout/            # Logout menu config
-├── wofi/               # Wofi application launcher config
-├── xsettingsd/         # XSettings daemon config
-├── yazi/               # Yazi file manager config
-├── aur-packages.txt    # List of installed AUR packages
-├── packages.txt        # List of installed pacman packages
-├── install.sh          # Automated installation script
-├── spiceitfy.sh        # Spotify theming script
-├── starship.toml       # Starship prompt config
-├── Backup-starship.toml# Backup of Starship prompt config
-├── pavucontrol.ini     # PulseAudio volume control settings
+├── backgrounds/          # Wallpapers and backgrounds
+├── btop/                 # Btop system monitor config
+├── cava/                 # Cava audio visualizer config
+├── fastfetch/            # System fetch tool config
+├── fish/                 # Fish shell configuration
+├── fonts/                # Custom fonts
+├── gtk-2.0/              # GTK2 theme settings
+├── gtk-3.0/              # GTK3 theme settings
+├── gtk-4.0/              # GTK4 theme settings
+├── htop/                 # Htop process viewer config
+├── hypr/                 # Hyprland window manager config
+├── imkool/               # Personal scripts/configs
+├── kitty/                # Kitty terminal config
+├── Kvantum/              # Kvantum theme engine settings
+├── lsd/                  # LSD (better ls) config
+├── micro/                # Micro terminal text editor config
+├── nvim/                 # Neovim configuration
+├── nwg-look/             # GTK theming tool config
+├── qt5ct/                # Qt5 theme settings
+├── qt6ct/                # Qt6 theme settings
+├── ranger/               # Ranger file manager config
+├── rofi/                 # Rofi app launcher config
+├── rofi.ooximkool/       # Custom Rofi theme
+├── Screenshots/          # Screenshots of my setup
+├── sddm/                 # SDDM login manager theme
+├── swaync/               # SwayNC notification manager
+├── tmux/                 # Tmux terminal multiplexer config
+├── wal/                  # Pywal colorscheme config
+├── waybar/               # Waybar status bar config
+├── waypaper/             # Wallpaper manager
+├── wlogout/              # Logout menu config
+├── wofi/                 # Wofi application launcher config
+├── xsettingsd/           # XSettings daemon config
+├── yazi/                 # Yazi file manager config
+├── aur-packages.txt      # List of installed AUR packages
+├── packages.txt          # List of installed pacman packages
+├── install.sh            # Automated installation script
+├── spiceitfy.sh          # Spotify theming script
+├── starship.toml         # Starship prompt config
+├── Backup-starship.toml  # Backup of Starship prompt config
+├── pavucontrol.ini       # PulseAudio volume control settings
 ```
 ---
 
@@ -128,8 +128,8 @@ Feel free to submit pull requests or open issues if you have suggestions to impr
 
 ---
 ## Special Thanks To
-ML4W
-JaKooLit
-HyDE
+- ML4W
+- JaKooLit
+- HyDE
 
 ---
