@@ -7,14 +7,14 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 
 ![Header](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/DittoDotsHeader.jpg)
 
-## Features
-- **Hyprland**: Tiling window manager configuration with a sleek and minimal look.
-- **Waybar**: Customizable status bar with themes.
-- **Kitty**: Configured for speed and aesthetics.
-- **Neovim**: Plugin-rich configuration using `lazy.nvim`.
-- **Fastfetch**: Display system info with a beautiful logo.
-- **Rofi/Wofi**: Application launchers with custom themes.
-- **S:qDDM**: A visually appealing login manager.
+## ⚡ Features
+✅ Hyprland Setup - Minimal, beautiful, and highly customizable
+✅ GTK & Qt Theming - Consistent look across applications
+✅ Waybar, Rofi, Wofi - Custom launchers and status bars
+✅ Neovim & Micro - Optimized terminal editors
+✅ Fish Shell & Starship - Modern shell experience
+✅ Tmux, Ranger, Yazi - Productivity-focused tools
+✅ Automated Install Script - Restore setup quickly
 
 ---
 
@@ -44,28 +44,20 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 
 ## Installation
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/imkool47/dotfiles.git
-   cd dotfiles
-   ```
-
-2. **Backup Existing Configurations**:
+1. **Backup Existing Configurations**:
    Ensure you back up your current configuration files:
    ```bash
    mv ~/.config ~/.config.backup
    ```
 
-3. **Install Dependencies**:
-   Install the necessary packages for your setup:
+2. **Clone the Repository**:
    ```bash
-   sudo pacman -S kitty neovim
-   ```
-   ```bash
-   yay -S cava brightnessctl fish hyprland hyprlock hyprpaper hyprpicker hyprshot hyprshade waybar rofi wlogout swaync pywal pywalfox waypaper wofi rofi starship yazi swww pipes.sh cbonsai cliphist
+   git clone https://github.com/imkool47/dotfiles.git ~/.dotfiles
+   cd ~/.dotfiles
+   chmod +x install.sh && ./install.sh
    ```
 
-4. **Fixing Audio Related Issues**:  
+3. **Fixing Audio Related Issues**:  
    Step 1 - Remove PulseAudio  
    ```bash
    sudo pacman -Rns pulseaudio
@@ -80,42 +72,64 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
    ```bash
    systemctl --user status pipewire
    ```
-   
-6. **Link the Configurations**:
-   Symlink the configurations to your home directory:
-   ```bash
-   ln -s ~/dotfiles/* ~/.config/
-   ```
-
 ---
 
 ## File Structure
 
 ```plaintext
-.
-├── fastfetch/
-├── hypr/
-├── kitty/
-├── nvim/
-├── rofi/
-├── swaync/
-├── waybar/
-├── wlogout/
-└── assets/
+
+dotfiles/
+├── backgrounds/        # Wallpapers and backgrounds
+├── btop/               # Btop system monitor config
+├── cava/               # Cava audio visualizer config
+├── fastfetch/          # System fetch tool config
+├── fish/               # Fish shell configuration
+├── fonts/              # Custom fonts
+├── gtk-2.0/            # GTK2 theme settings
+├── gtk-3.0/            # GTK3 theme settings
+├── gtk-4.0/            # GTK4 theme settings
+├── htop/               # Htop process viewer config
+├── hypr/               # Hyprland window manager config
+├── imkool/             # Personal scripts/configs
+├── kitty/              # Kitty terminal config
+├── Kvantum/            # Kvantum theme engine settings
+├── lsd/                # LSD (better ls) config
+├── micro/              # Micro terminal text editor config
+├── nvim/               # Neovim configuration
+├── nwg-look/           # GTK theming tool config
+├── qt5ct/              # Qt5 theme settings
+├── qt6ct/              # Qt6 theme settings
+├── ranger/             # Ranger file manager config
+├── rofi/               # Rofi app launcher config
+├── rofi.ooximkool/     # Custom Rofi theme
+├── Screenshots/        # Screenshots of my setup
+├── sddm/               # SDDM login manager theme
+├── swaync/             # SwayNC notification manager
+├── tmux/               # Tmux terminal multiplexer config
+├── wal/                # Pywal colorscheme config
+├── waybar/             # Waybar status bar config
+├── waypaper/           # Wallpaper manager
+├── wlogout/            # Logout menu config
+├── wofi/               # Wofi application launcher config
+├── xsettingsd/         # XSettings daemon config
+├── yazi/               # Yazi file manager config
+├── aur-packages.txt    # List of installed AUR packages
+├── packages.txt        # List of installed pacman packages
+├── install.sh          # Automated installation script
+├── spiceitfy.sh        # Spotify theming script
+├── starship.toml       # Starship prompt config
+├── Backup-starship.toml# Backup of Starship prompt config
+├── pavucontrol.ini     # PulseAudio volume control settings
 ```
-
-- **fastfetch/**: Configuration for system info.
-- **hypr/**: Hyprland-specific settings and scripts.
-- **kitty/**: Terminal emulator configuration.
-- **nvim/**: Neovim setup.
-- **waybar/**: Status bar theme and modules.
-- **assets/**: Images used in this `README.md`.
-
 ---
 
 ## Contributing
 Feel free to submit pull requests or open issues if you have suggestions to improve these dotfiles.
 
 ---
+## Special Thanks To
+ML4W
+JaKooLit
+HyDE
 
-Enjoy your personalized Arch Linux setup! 🌟
+---
