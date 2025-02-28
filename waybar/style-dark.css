@@ -1,5 +1,5 @@
 @import url("./launch_animation.css");
-@define-color background         @theme_bg_color;
+/* @define-color background         @theme_bg_color; */
 @define-color background-alpha   alpha(@theme_bg_color, 0.25);
 @define-color background-beta    alpha(@theme_bg_color, 0.75);
 @define-color border             @borders;
@@ -20,7 +20,7 @@
 window#waybar {
   background: @background-beta;
   color: @text;
-  border: 1px solid alpha(@border, 0.75);
+  /* border: 1px solid alpha(@border, 0.75); */
   transition:
     background-color 0.25s linear,
     color 0.25s linear,

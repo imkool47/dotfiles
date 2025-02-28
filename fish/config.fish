@@ -31,3 +31,10 @@ set PERCENTAGE "$(echo "$upower_out" | grep 'percentage:' | grep -oe '[0-9]*%')"
 eval "$(pyenv init -)"
 fastfetch
 starship init fish | source
+
+
+function sudo_last
+    eval sudo (history | head -n1)
+end
+
+abbr -a !! --position anywhere --function sudo_last
