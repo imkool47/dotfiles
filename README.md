@@ -22,8 +22,13 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 
 ### Desktop Setup
 
-### Kitty (Fish, Starship and Pokeget Setup)
-![Desktop Screenshot](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/Kitty.png)
+### Kitty (Fish, Starship, and Pokeget Setup)
+
+#### 🟢 First Setup:
+![First Setup](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/Kitty.png)
+
+#### 🔵 Second Setup:
+![Second Setup](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/kitty-new.png)
 
 ### Btop
 ![btop](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/btop.png)
