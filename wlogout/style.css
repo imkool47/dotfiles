@@ -69,3 +69,9 @@ button:hover {
 #lock:hover {
   background-image: image(url("./icons/lock-hover.png"));
 }
+#sleep {
+  background-image: image(url("./icons/sleep.png"));
+}
+#sleep:hover {
+background-image: image(url("./icons/sleep-hover.png"));
+}
