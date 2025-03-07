@@ -34,7 +34,7 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 ![btop](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/btop.png)
 
 ### Neovim with Plugins
-![Neovim](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/neovim.png)
+![Neovim](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/2025-03-07-164315_hyprshot.png)
 
 ### Rofi
 ![Neovim](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/rofi.png)
@@ -42,8 +42,10 @@ Welcome to my dotfiles repository! This is where I store my personal configurati
 ### Spotify with Cava
 ![Spotify_Cava](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/spotify-cava.png)
 
-### Waybar
+### Waybar Themes
 ![Waybar](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/waybar-with-cava.png)
+
+![Waybar2](https://raw.githubusercontent.com/imkool47/dotfiles/refs/heads/main/Screenshots/waybar%202.png)
 
 ---
 
