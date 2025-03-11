@@ -1,1 +1,1 @@
-smile
+flatpak run it.mijorus.smile

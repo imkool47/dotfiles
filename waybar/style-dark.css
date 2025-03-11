@@ -219,6 +219,7 @@ tooltip {
 #backlight,
 #custom-wl-gammarelay-brightness,
 #battery,
+#custom-updater,
 #network {
   min-width: 46px;
 }

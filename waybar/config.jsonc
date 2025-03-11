@@ -21,6 +21,7 @@
       "group/group-power",
       "group/group-connection",
       "group/group-vitals",
+      "custom/updater",
       "custom/notification",
     ],
 
@@ -184,6 +185,7 @@
         "car": "",
         "default": ["", "", ""],
       },
+      "ignored-sinks": ["Easy Effects Sink"],
       "on-click": "swayosd-client --output-volume mute-toggle --max-volume 200 || wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
       "on-click-right": "$ROFI 'rofi -theme-str \"configuration {show-icons: false;} window {location: north east; x-offset: -307; y-offset: 2; width: 250px;} listview {columns: 1;} element-text {vertical-align: 0.50; horizontal-align: 0.50;} inputbar {enabled: false;}\" -modes out:$HOME/.config/rofi/scripts/sound-output-port.sh,in:$HOME/.config/rofi/scripts/sound-input-port.sh -show out'",
       "on-scroll-up": "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0 | (swayosd-client --output-volume +1 --max-volume 200 || wpctl set-volume -l '1.5' @DEFAULT_AUDIO_SINK@ 1%+)",
@@ -230,7 +232,8 @@
       "format-full": "󱟢 {capacity}",
       "format-discharging": "{icon} {capacity}",
       "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-      "on-click": "sleep 0.1 && power-options-gtk",
+      "on-click": "$ROFI '$HOME/.config/rofi/scripts/power-options-daemon.sh'",
+      "on-click-right": "power-options-gtk",
       "tooltip-format": "{timeTo}\nHealth: {health}%\nPower: {power}",
     },
 
@@ -312,7 +315,8 @@
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
       "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
       "on-click": "$ROFI '$HOME/.config/rofi/scripts/bluetooth'",
-      "on-click-right": "sleep 0.1 && blueman-manager",
+      // "on-click-right": "sleep 0.1 && blueman-manager",
+      "on-click-right": "blueberry",
     },
 
     "group/group-vitals": {
@@ -328,7 +332,7 @@
       "interval": 2,
       "format": " {}%",
       "max-length": 10,
-      "on-click": "sleep 0.1",
+      "on-click": "",
     },
 
     "memory": {
@@ -336,8 +340,16 @@
       "format": "󰑭 {used:0.1f}GiB",
       "max-length": 10,
       "tooltip-format": "Swap: {swapUsed:0.1f}GiB",
-      "on-click": "sleep 0.1 && missioncenter",
-      "on-click-right": "sleep 0.1 && resources",
+      "on-click": "resources",
+      "on-click-right": "missioncenter",
+    },
+
+    "custom/updater":{
+    "format": " {}",
+    "exec": "checkupdates | wc -l",
+    "exec-if": "[[ $(checkupdates | wc -l) ]]",
+    "interval": 15,
+    "on-click": "kitty -T update yay -Syu || yay -Syu && notify-send 'The system has been updated'",
     },
 
     "custom/notification": {
@@ -356,8 +368,8 @@
       "return-type": "json",
       "exec-if": "which swaync-client",
       "exec": "swaync-client -swb",
-      "on-click": "sleep 0.1 && swaync-client -t",
-      "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+      "on-click": "swaync-client -t",
+      "on-click-right": "swaync-client -d -sw",
       "escape": true,
     },
 
@@ -500,6 +512,7 @@
         "car": "",
         "default": ["", "", ""],
       },
+      "ignored-sinks": ["Easy Effects Sink"],
       "on-click": "swayosd-client --output-volume mute-toggle --max-volume 200 || wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
       "on-click-right": "$ROFI 'rofi -theme-str \"configuration {show-icons: false;} window {location: north east; x-offset: -4; y-offset: 2; width: 250px;} listview {columns: 1;} element-text {vertical-align: 0.50; horizontal-align: 0.50;} inputbar {enabled: false;}\" -modes out:$HOME/.config/rofi/scripts/sound-output-port.sh,in:$HOME/.config/rofi/scripts/sound-input-port.sh -show out'",
       "on-scroll-up": "wpctl set-mute @DEFAULT_AUDIO_SINK@ 0 | (swayosd-client --output-volume +1 --max-volume 200 || wpctl set-volume -l '1.5' @DEFAULT_AUDIO_SINK@ 1%+)",

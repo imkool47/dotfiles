@@ -1,1 +1,1 @@
-qgnome-calculator
+gnome-calculator
