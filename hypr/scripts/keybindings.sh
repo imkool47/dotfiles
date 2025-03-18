@@ -46,7 +46,7 @@ BEGIN { i = 1 }
 
 if [[ -n "$KEYBINDS" ]]; then
     sleep 0.2
-    rofi -dmenu -i -markup -eh 2 -replace -p "Keybinds" -config ~/.config/rofi/config-compact.rasi <<<"$KEYBINDS"
+    rofi -dmenu -i -markup -eh 2 -replace -p "Keybinds" -config ~/.config/rofi/config-keybinds.rasi <<<"$KEYBINDS"
 else
     echo "No keybinds found!"
 fi

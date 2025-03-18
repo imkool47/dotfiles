@@ -38,3 +38,8 @@ function sudo_last
 end
 
 abbr -a !! --position anywhere --function sudo_last
+
+thefuck --alias | source
+zoxide init fish | source
+# Set up fzf key bindings
+fzf --fish | source
