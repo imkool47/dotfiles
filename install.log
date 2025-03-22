@@ -1,9 +1,0 @@
-[22:25:32 2025-02-28] FETCHING Version 2.39.4
-[22:25:32 2025-02-28] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.39.4/spicetify-2.39.4-linux-amd64.tar.gz
-[22:25:35 2025-02-28] EXTRACTING /home/ooximkool/.spicetify/spicetify.tar.gz
-[22:25:35 2025-02-28] SETTING EXECUTABLE PERMISSIONS TO /home/ooximkool/.spicetify/spicetify
-[22:25:35 2025-02-28] REMOVING /home/ooximkool/.spicetify/spicetify.tar.gz
-[22:25:35 2025-02-28] spicetify path already set in /home/ooximkool/.bashrc, continuing...
-[22:25:35 2025-02-28] spicetify path already set in /home/ooximkool/.bash_profile, continuing...
-[22:25:35 2025-02-28] spicetify v2.39.4 was installed successfully to /home/ooximkool/.spicetify
-[22:25:35 2025-02-28] Run 'spicetify --help' to get started
