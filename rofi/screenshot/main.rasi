@@ -1,14 +1,18 @@
 //by : @Imkool47
 
-@import "screenshot/font.rasi"
 @import "~/.cache/wal/colors-rofi-pywal.rasi"
+
+//Font
+configuration {
+    font: "FiraCode Nerd Font 11";
+}
 
 // PROPERTIES
 * {
     background:                  #010101;
-    background-alt:              #010101;
-    selected:                    #141414;
-    active:                      #141414;
+    background-alt:              @color1;
+    selected:                    @color8;
+    active:                      @color3;
     urgent:                      #808080;
 }
 
@@ -95,7 +99,7 @@ listview {
 // ELEMENTS
 element {
     enabled:                     true;
-    padding:                     30px 10px;
+    padding:                     30px -20px;
     border-radius:               12px;
     background-color:            @background-alt;
     text-color:                  #FFF;
@@ -106,8 +110,9 @@ element-text {
     background-color:            transparent;
     text-color:                  #FFF;
     cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
+    // vertical-align:              0.5;
+    // horizontal-align:            0.5;
+    padding:                     10px 50px;
 }
 element selected.normal {
     background-color:            var(selected);

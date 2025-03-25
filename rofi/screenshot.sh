@@ -20,7 +20,7 @@ rofi_cmd() {
 	rofi -dmenu \
 		-theme ${rofidir}/${theme}.rasi \
 		-p " $USER" \
-		-mesg "Monitor | Window | Selection" 
+		-mesg "Full Screen | Window | Selection"
 }
 
 # Pass variables to rofi dmenu
