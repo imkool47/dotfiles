@@ -232,7 +232,7 @@
       "format-full": "󱟢 {capacity}",
       "format-discharging": "{icon} {capacity}",
       "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-      "on-click": "$ROFI '$HOME/.config/rofi/scripts/power-options-daemon.sh'",
+      "on-click": "/home/ooximkool/.config/rofi/scripts/power-options-daemon.sh",
       "on-click-right": "power-options-gtk",
       "tooltip-format": "{timeTo}\nHealth: {health}%\nPower: {power}",
     },
@@ -298,7 +298,7 @@
       "format-disconnected": "󰤮 ON",
       "tooltip-format-wifi": "<span><b><u>{essid}</u></b></span>\t\t\t{ipaddr}\n\t {bandwidthDownBits} |  {bandwidthUpBits}",
       "tooltip-format-ethernet": "<span><b><u>{ifname}</u></b></span>\t\t\t{ipaddr}\n\t {bandwidthDownBits} |  {bandwidthUpBits}",
-      "on-click": "$ROFI '$HOME/.config/rofi/scripts/wifi.sh'",
+      "on-click": "/home/ooximkool/.config/rofi/scripts/wifi.sh",
       "on-click-right": "sleep 0.1 && nm-connection-editor",
     },
 
@@ -314,9 +314,8 @@
       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
       "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-      "on-click": "$ROFI '$HOME/.config/rofi/scripts/bluetooth'",
-      // "on-click-right": "sleep 0.1 && blueman-manager",
-      "on-click-right": "blueberry",
+      "on-click": "/home/ooximkool/.config/rofi/scripts/bluetooth",
+      "on-click-right": "blueman-manager",
     },
 
     "group/group-vitals": {
@@ -372,33 +371,6 @@
       "on-click-right": "swaync-client -d -sw",
       "escape": true,
     },
-
-// "wireplumber": {
-//   "format": "{icon} {volume}",
-//   "format-bluetooth": "{volume} {icon}",
-//   "format-bluetooth-muted": "{icon}",
-//   "format-muted": "  {volume}",
-//   "format-icons": {
-//     "headphone": "",
-//     "hands-free": "󱡏",
-//     "headset": "",
-//     "default": ["", "", ""]
-//   },
-//   "on-click": "swayosd-client --input-volume mute-toggle",
-//   "on-click-right": "pkill rofi || rofi -modes out:$HOME/.config/rofi/scripts/sound-output-port.sh,in:$HOME/.config/rofi/scripts/sound-input-port.sh -show in",
-//   "on-scroll-up": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 0 | swayosd-client --input-volume +1 --max-volume 150",
-//   "on-scroll-down": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ 0 | swayosd-client --input-volume -1 --max-volume 150",
-//   "max-volume": 150,
-//   "scroll-step": 2
-// },
-
-// "custom/wl-gammarelay-gamma": {
-//    "format": "{}% γ",
-//    "exec": "wl-gammarelay-rs watch {g}",
-//    "on-click": "busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500",
-//    "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d +0.02",
-//    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d -0.02"
-// },
 
   },
 

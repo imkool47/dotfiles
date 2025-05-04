@@ -30,15 +30,15 @@ run_rofi() {
 
 # take shots
 shotscreen () {
-	hyprshot -m output -o ~/Pictures/Screenshots -f Screenshotﾠ$(date "+%Y-%m-%dﾠ%H:%M:%S").png
+	hyprshot -m output -o ~/Pictures/Screenshots -f Screenshot_$(date "+%Y-%m-%d_%H:%M:%S").png
 }
 
 shotwin () {
-	hyprshot -m window -o ~/Pictures/Screenshots -f Screenshotﾠ$(date "+%Y-%m-%dﾠ%H:%M:%S").png
+	hyprshot -m window -o ~/Pictures/Screenshots -f Screenshot_$(date "+%Y-%m-%d_%H:%M:%S").png
 }
 
 shotarea () {
-	hyprshot -m region -o ~/Pictures/Screenshots -f Screenshotﾠ$(date "+%Y-%m-%dﾠ%H:%M:%S").png
+	hyprshot -m region -o ~/Pictures/Screenshots -f Screenshot_$(date "+%Y-%m-%d_%H:%M:%S").png
 }
 
 # Execute Command

@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
+require('config.keymaps')
 
 vim.cmd('set hidden')
 vim.cmd('set clipboard+=unnamedplus')
@@ -28,7 +29,7 @@ vim.cmd [[
 ]]
 
 -- Show file name in each split window bar
-vim.o.winbar = '%#WinBar#%=' .. '%f' .. '%='
+-- vim.o.winbar = '%#WinBar#%=' .. '%f' .. '%='
 vim.cmd [[
   highlight WinBar guibg=#282a36 guifg=#f8f8f2
 ]]

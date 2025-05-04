@@ -1,5 +1,14 @@
-res_w=$(hyprctl -j monitors | jq '.[] | select(.focused==true) | .width')
-res_h=$(hyprctl -j monitors | jq '.[] | select(.focused==true) | .height')
-h_scale=$(hyprctl -j monitors | jq '.[] | select (.focused == true) | .scale' | sed 's/\.//')
-w_margin=$(( res_h * 27 / h_scale ))
-wlogout -b 5 -T $w_margin -B $w_margin
+#!/usr/bin/env bash
+A_1080=400
+B_1080=400
+
+# Check if wlogout is already running
+if pgrep -x "wlogout" > /dev/null; then
+    pkill -x "wlogout"
+    exit 0
+fi
+
+# Detect monitor resolution and scaling factor
+resolution=$(hyprctl -j monitors | jq -r '.[] | select(.focused==true) | .height / .scale' | awk -F'.' '{print $1}')
+hypr_scale=$(hyprctl -j monitors | jq -r '.[] | select(.focused==true) | .scale')
+wlogout -C $HOME/.config/wlogout/style.css -l $HOME/.config/wlogout/layout --protocol layer-shell -b 4 -T $(awk "BEGIN {printf \"%.0f\", $A_1080 * 1080 * $hypr_scale / $resolution}") -B $(awk "BEGIN {printf \"%.0f\", $B_1080 * 1080 * $hypr_scale / $resolution}") &

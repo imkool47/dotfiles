@@ -13,8 +13,8 @@
 configuration {
     modi:                       "drun,filebrowser,window,run";
     font:                       "Fira Sans 11";
-    show-icons:                 false;
-    icon-theme:                 "kora";
+    show-icons:                 true;
+    icon-theme:                 "Tela-circle-dracula";
     display-drun:                " ";
     display-run:                 " ";
     display-filebrowser:         "  ";
@@ -35,13 +35,13 @@ configuration {
 @theme "~/.cache/wal/colors-rofi-pywal"
 
 /* ---- Load wallpaper ---- */
-// @import "~/.config/imkool/cache/current_wallpaper.rasi"
+@import "~/.config/imkool/cache/current_wallpaper.rasi"
 
 /* ---- Load border width ---- */
 @import "~/.config/imkool/settings/rofi-border.rasi"
 
 /* ---- Load border radius ---- */
-@import "~/.config/imkool/settings/rofi-border-radius.rasi"
+// @import "~/.config/imkool/settings/rofi-border-radius.rasi"
 
 // Main //
 window {
@@ -58,6 +58,11 @@ window {
     border-radius:               @border-radius;
     background-color:            @background;
 }
+
+* {
+    border-radius: 0.5em;
+}
+
 
 mainbox {
     enabled:                     true;

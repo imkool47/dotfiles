@@ -10,7 +10,7 @@
 # Check to use wallpaper cache
 # ----------------------------------------------------- 
 
-if [ -f ~/.config/ml4w/settings/wallpaper_cache ]; then
+if [ -f ~/.config/imkool/settings/wallpaper_cache ]; then
     use_cache=1
     echo ":: Using Wallpaper Cache"
 else
@@ -23,15 +23,15 @@ fi
 # ----------------------------------------------------- 
 
 force_generate=0
-generatedversions="$HOME/.config/ml4w/cache/wallpaper-generated"
-waypaperrunning=$HOME/.config/ml4w/cache/waypaper-running
-cachefile="$HOME/.config/ml4w/cache/current_wallpaper"
-blurredwallpaper="$HOME/.config/ml4w/cache/blurred_wallpaper.png"
-squarewallpaper="$HOME/.config/ml4w/cache/square_wallpaper.png"
-rasifile="$HOME/.config/ml4w/cache/current_wallpaper.rasi"
-blurfile="$HOME/.config/ml4w/settings/blur.sh"
+generatedversions="$HOME/.config/imkool/cache/wallpaper-generated"
+waypaperrunning=$HOME/.config/imkool/cache/waypaper-running
+cachefile="$HOME/.config/imkool/cache/current_wallpaper"
+blurredwallpaper="$HOME/.config/imkool/cache/blurred_wallpaper.png"
+squarewallpaper="$HOME/.config/imkool/cache/square_wallpaper.png"
+rasifile="$HOME/.config/imkool/cache/current_wallpaper.rasi"
+blurfile="$HOME/.config/imkool/settings/blur.sh"
 defaultwallpaper="$HOME/wallpaper/default.jpg"
-wallpapereffect="$HOME/.config/ml4w/settings/wallpaper-effect.sh"
+wallpapereffect="$HOME/.config/imkool/settings/wallpaper-effect.sh"
 blur="50x30"
 blur=$(cat $blurfile)
 
@@ -112,6 +112,14 @@ fi
 echo ":: Stop all running waybar instances"
 killall waybar
 pkill waybar
+
+# if [ "$1" == "--reload" ]; then
+#     echo ":: Reloading Waybar"
+#     killall waybar 2>/dev/null
+#     pkill waybar 2>/dev/null
+#     sleep 0.5
+#     ~/.config/waybar/launch.sh
+# fi
 
 # ----------------------------------------------------- 
 # Execute pywal

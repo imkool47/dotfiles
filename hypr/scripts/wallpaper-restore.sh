@@ -14,7 +14,7 @@
 # Set defaults
 # ----------------------------------------------------- 
 
-defaultwallpaper="$HOME/wallpaper/default.jpg"
+defaultwallpaper="$HOME/Pictures/wallpaper/arch_purple.jpg"
 cachefile="$HOME/.config/imkool/cache/current_wallpaper"
 
 # ----------------------------------------------------- 

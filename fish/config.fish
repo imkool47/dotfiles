@@ -9,19 +9,6 @@ set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
 end
 
-
-
-# Handy change dir shortcuts
-abbr .. 'cd ..'
-abbr ... 'cd ../..'
-abbr .3 'cd ../../..'
-abbr .4 'cd ../../../..'
-abbr .5 'cd ../../../../..'
-
-# Always mkdir a path (this doesn't inhibit functionality to make a single dir)
-abbr mkdir 'mkdir -p'
-
-
 set --export BROWSER "/usr/bin/zen-browser"
 set MOZ_ENABLE_WAYLAND "1"
 set PYENV_ROOT "$HOME/.pyenv"
@@ -104,3 +91,8 @@ end
 
 #Alise for fzf to open in nvim (causing an issue with multiple file opening in tmux)
 # alias fzf="fzf --style full --border --preview 'bat --color=always {}' --exit-0 | xargs -r nvim"
+
+# function cava
+#     kitty --class=CavaTerm cava
+# end
+source ~/.config/fish/aliases.fish
